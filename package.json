@@ -1,0 +1,45 @@
+{
+	"name": "brocolli-ng-classify",
+	"version": "0.0.0",
+	"description": "Compile CoffeeScript classes to AngularJS modules",
+	"author": {
+		"name": "Cary Landholt",
+		"email": "cary@landholt.com",
+		"url": "https://github.com/CaryLandholt"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CaryLandholt/broccoli-ng-classify"
+	},
+	"main": "index",
+	"keywords": [
+		"broccoliplugin",
+		"angular",
+		"angularjs",
+		"class",
+		"coffeescript",
+		"module"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"dependencies": {
+		"broccoli-filter": "0.1.6",
+		"coffee-script": "^1.7.1",
+		"ng-classify": "^3.0.0"
+	},
+	"devDependencies": {
+		"conventional-changelog": "0.0.11",
+		"gulp": "^3.8.6",
+		"gulp-util": "^3.0.0"
+	},
+	"files": [
+		"CHANGELOG.md",
+		"CONTRIBUTING.md",
+		"index.coffee",
+		"index.js",
+		"LICENSE",
+		"README.md"
+	]
+}

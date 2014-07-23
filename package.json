@@ -1,6 +1,6 @@
 {
 	"name": "brocolli-ng-classify",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Compile CoffeeScript classes to AngularJS modules",
 	"author": {
 		"name": "Cary Landholt",

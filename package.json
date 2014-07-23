@@ -1,5 +1,5 @@
 {
-	"name": "brocolli-ng-classify",
+	"name": "broccoli-ng-classify",
 	"version": "0.1.0",
 	"description": "Compile CoffeeScript classes to AngularJS modules",
 	"author": {

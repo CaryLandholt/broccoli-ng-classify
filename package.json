@@ -13,7 +13,7 @@
 	},
 	"main": "index",
 	"keywords": [
-		"broccoliplugin",
+		"broccoli-plugin",
 		"angular",
 		"angularjs",
 		"class",

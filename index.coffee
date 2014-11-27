@@ -2,20 +2,30 @@ Filter     = require 'broccoli-filter'
 ngClassify = require 'ng-classify'
 
 class Plugin extends Filter
-	constructor: (@inputTree, @options = {}) -> return new Plugin(@inputTree, @options) if not (@ instanceof Plugin)
+	constructor: (@inputTree, @options = {}) ->
 
 	extensions: ['coffee']
 	targetExtension: 'coffee'
 
 	processString: (string) ->
-		filterOptions = @options
-
 		try
-			ngClassify string, filterOptions
+			ngClassify string, @options
 		catch error
 			error.line   = error.location and error.location.first_line
 			error.column = error.location and error.location.first_column
 
 			throw error
 
-module.exports = Plugin
+class PluginFilter extends Plugin
+	constructor: ->
+		if not (@ instanceof PluginFilter)
+			F = (args) ->
+				Plugin.apply @, args
+
+			F:: = Plugin::
+
+			return new F arguments
+
+		super
+
+module.exports = PluginFilter

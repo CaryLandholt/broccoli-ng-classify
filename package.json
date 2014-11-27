@@ -25,13 +25,15 @@
 		"node": ">=0.10.0"
 	},
 	"dependencies": {
-		"broccoli-filter": "0.1.6",
+		"broccoli-filter": "0.1.7",
 		"coffee-script": "^1.7.1",
-		"ng-classify": "^4.0.0"
+		"ng-classify": "^4.0.2"
 	},
 	"devDependencies": {
+		"broccoli": "0.13.3",
+		"broccoli-static-compiler": "0.2.1",
 		"conventional-changelog": "0.0.11",
-		"gulp": "^3.8.6",
+		"gulp": "^3.8.0",
 		"gulp-util": "^3.0.0"
 	},
 	"files": [
